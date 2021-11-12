@@ -23,9 +23,8 @@ export class Main extends React.Component {
       >
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">About Me</h2>
@@ -62,9 +61,8 @@ export class Main extends React.Component {
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
@@ -97,7 +95,10 @@ export class Main extends React.Component {
               you can still grab the executable from my GitHub.
             </a>
           </p>
-          <ul className="icons" style={{marginTop: '-0.75rem', marginBottom: '-0.5rem'}}>
+          <ul
+            className="icons"
+            style={{ marginTop: '-0.75rem', marginBottom: '-0.5rem' }}
+          >
             <li>
               <a
                 href="https://github.com/Matteas-Eden/outerstellar"
@@ -153,9 +154,8 @@ export class Main extends React.Component {
 
         <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
