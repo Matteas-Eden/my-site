@@ -17,7 +17,7 @@ export const Header = (props) => (
         <ul className="icons" style={{ margin: '-1rem' }}>
           <li>
             <a
-              href="https://nz.linkedin.com"
+              href="https://nz.linkedin.com/in/matteas-eden"
               className="icon fa-linkedin"
               target="_blank"
             >
