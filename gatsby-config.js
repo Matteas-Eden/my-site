@@ -6,18 +6,18 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: 'gatsby-starter-default',
-    //     short_name: 'starter',
-    //     start_url: '/',
-    //     background_color: '#663399',
-    //     theme_color: '#663399',
-    //     display: 'minimal-ui',
-    //     icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'matteas-eden',
+        short_name: 'matteas',
+        start_url: '/',
+        background_color: '#004a7f',
+        theme_color: '#004a7f',
+        display: 'minimal-ui',
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
+      },
+    },
     'gatsby-plugin-sass',
   ],
 }
