@@ -34,8 +34,15 @@ export const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Software Developer, Computer Engineer and Linux Enthusiast' },
-              { name: 'keywords', content: 'matteas, eden, developer, engineer, gatsby, react' },
+              {
+                name: 'description',
+                content:
+                  'Software Developer, Computer Engineer and Linux Enthusiast',
+              },
+              {
+                name: 'keywords',
+                content: 'matteas, eden, developer, engineer, gatsby, react',
+              },
             ]}
           >
             <html lang="en" />

@@ -23,8 +23,9 @@ export class Main extends React.Component {
       >
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
-            }`}
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">About Me</h2>
@@ -61,8 +62,9 @@ export class Main extends React.Component {
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
-            }`}
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
@@ -154,8 +156,9 @@ export class Main extends React.Component {
 
         <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
-            }`}
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
