@@ -1,6 +1,6 @@
 {
   "name": "my-site",
-  "description": "Computer Engineer and Hobbyist Developer",
+  "description": "Portfolio site for Matteas Eden",
   "version": "1.0.0",
   "author": "Matteas Eden",
   "dependencies": {
@@ -21,6 +21,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0",
+    "serve": "gatsby serve",
     "format": "prettier --write 'src/**/(*.js|*.jsx)'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Matteas-Eden/my-site"
   }
 }
