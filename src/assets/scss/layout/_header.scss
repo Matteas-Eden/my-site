@@ -68,12 +68,13 @@
     line-height: 5.3rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
+    display: flex;
 
     .icon {
       &:before {  
         font-size: 3rem;
       }
-      margin-top: 1rem;
+      margin: auto;
     }
   }
 
