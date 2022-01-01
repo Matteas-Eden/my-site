@@ -1,10 +1,19 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 import outerstellar from '../images/outerstellar.png'
 import me from '../images/matt.jpg'
 import { ContactForm } from './ContactForm'
+import { LegacyRef } from '@reach/router/node_modules/@types/react'
 
-export class Main extends React.Component {
+interface MainProps {
+  route: object,
+  article: string,
+  articleTimeout: boolean,
+  onCloseArticle: Function,
+  timeout: boolean,
+  setWrapperRef: LegacyRef<HTMLDivElement>,
+}
+
+export class Main extends React.Component<MainProps> {
   render() {
     let close = (
       <div
@@ -168,13 +177,4 @@ export class Main extends React.Component {
       </div>
     )
   }
-}
-
-Main.propTypes = {
-  route: PropTypes.object,
-  article: PropTypes.string,
-  articleTimeout: PropTypes.bool,
-  onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
 }

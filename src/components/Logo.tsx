@@ -1,6 +1,12 @@
 import React from 'react'
 
-export const Logo = (props) => {
+interface LogoProps {
+  size: string,
+  thickness: number,
+  colour: string
+}
+
+export const Logo = (props : LogoProps) => {
   return (
     <svg
       width={props.size ? props.size : '1em'}

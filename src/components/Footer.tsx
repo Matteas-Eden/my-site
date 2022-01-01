@@ -1,7 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-export const Footer = (props) => (
+interface FooterProps {
+  timeout: boolean;
+}
+
+export const Footer = (props: FooterProps) => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
       Design: <a href="https://html5up.net">HTML5 UP</a>. Built with:{' '}
@@ -14,7 +17,3 @@ export const Footer = (props) => (
     </p>
   </footer>
 )
-
-Footer.propTypes = {
-  timeout: PropTypes.bool,
-}
