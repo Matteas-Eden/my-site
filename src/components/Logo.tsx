@@ -1,12 +1,19 @@
 import React from 'react'
 
-export const Logo = (props) => {
+interface LogoProps {
+  className: string,
+  size: string,
+  thickness: number,
+  colour: string
+}
+
+export const Logo = (props : LogoProps) => {
   return (
     <svg
-      width={props.size ? props.size : '1em'}
-      height={props.size ? props.size : '1em'}
+      className={props.className || 'icon'}
+      width={props.size || '1em'}
+      height={props.size || '1em'}
       viewBox="0 0 300 300"
-      {...props}
     >
       <path
         d="M13.976 279.315c87.255-144.359 55.104-255.7 52.03-254.223-36.842 186.977 115.979 293.81 94.61 10.288-4.414-58.563 25.497 272.719-62.956 236.92"

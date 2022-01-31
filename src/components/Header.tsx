@@ -1,8 +1,12 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 import { Logo } from './Logo'
 
-export const Header = (props) => (
+interface HeaderProps {
+  onOpenArticle: Function;
+  timeout: boolean;
+}
+
+export const Header = (props: HeaderProps) => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       <Logo className="icon" size="3em" colour="white" thickness={10} />
@@ -69,8 +73,3 @@ export const Header = (props) => (
     </nav>
   </header>
 )
-
-Header.propTypes = {
-  onOpenArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-}

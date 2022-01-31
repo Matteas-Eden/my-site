@@ -1,12 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import { RouteComponentProps } from 'react-router'
 
 import '../assets/scss/main.scss'
 
-export const Layout = ({ children, location }) => {
-  let content
+export const Layout: React.FC<RouteComponentProps> = ({ children, location }) => {
+  let content: JSX.Element;
 
   if (location && location.pathname === '/') {
     content = <div>{children}</div>
@@ -52,8 +52,4 @@ export const Layout = ({ children, location }) => {
       )}
     />
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
