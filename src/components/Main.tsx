@@ -3,6 +3,7 @@ import outerstellar from '../images/outerstellar.png'
 import me from '../images/matt.jpg'
 import { ContactForm } from './ContactForm'
 import { LegacyRef } from '@reach/router/node_modules/@types/react'
+import { About } from '../articles/About'
 
 interface MainProps {
   route: object,
@@ -30,50 +31,13 @@ export class Main extends React.Component<MainProps> {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">About Me</h2>
-          <span className="image main">
-            <img src={me} alt="" />
-          </span>
-          <p>
-            Hey there, I'm Matt Eden and I work as a computer engineer in
-            Auckland, New Zealand.
-            <br />I created this website to make it easier for interested people
-            to learn a little bit about me and, just as importantly, check out
-            some of my awesome work.
-          </p>
-          <h3>Who am I?</h3>
-          <p>
-            I'm just someone who likes computers. It's sort of hard to imagine
-            myself without one, to be honest. Over time, electronic devices have
-            embedded themselves into seemingly every aspect of our lives and
-            uplifted our day-to-day activities. As a result of that, I love
-            learning about them.
-          </p>
-          <h3>What do I do?</h3>
-          <p>
-            Truth be told, I dabble in a little bit of everything. Whether it's
-            writing low-level C for embedded contexts, throwing together enough
-            TypeScript to get a website running, spinning up Docker instances to
-            host local databases, configuring a Linux server to act as a private
-            cloud or wrangling with AWS for a corporate cloud... I've probably
-            done it. Or tried to, at least.
-          </p>
-
-          {close}
-        </article>
+        <About className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+          }`} close={close} />
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
@@ -165,9 +129,8 @@ export class Main extends React.Component<MainProps> {
 
         <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
