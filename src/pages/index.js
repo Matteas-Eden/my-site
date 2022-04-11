@@ -17,6 +17,7 @@ class IndexPage extends React.Component {
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
+    this.handleSwitchArticle = this.handleSwitchArticle.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
   }
@@ -77,6 +78,24 @@ class IndexPage extends React.Component {
     }, 350)
   }
 
+  handleSwitchArticle(article) {   
+    this.setState({
+      articleTimeout: false
+    })
+
+    setTimeout(() => {
+      this.setState({
+        article: article
+      })
+    }, 325)
+
+    setTimeout(() => {
+      this.setState({
+        articleTimeout: true
+      })
+    }, 350)
+  }
+
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       if (this.state.isArticleVisible) {
@@ -103,6 +122,7 @@ class IndexPage extends React.Component {
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
+              onSwitchArticle={this.handleSwitchArticle}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
