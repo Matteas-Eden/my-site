@@ -1,31 +1,29 @@
-import React, { useState } from 'react';
-import { ArticleProps } from './ArticleProps';
-import { Outerstellar } from './work/Outerstellar';
-import { Accordion, Icon } from 'semantic-ui-react';
+// import React, { useState } from 'react';
+import React from 'react';
 
-import '../assets/css/semantic-accordion.css';
+// import { Outerstellar } from './work/Outerstellar';
+// import { Accordion, Icon } from 'semantic-ui-react';
+// import { TestArticle } from './work/TestArticle';
 
-export const Work = ({ className, close }: ArticleProps) => {
+// import '../assets/css/semantic-accordion.css';
 
-    const [activeIndex, setActiveIndex] = useState<number>(-1);
+import { ArticleProps } from "./ArticleProps"
+interface WorkProps extends ArticleProps {
+    onSwitchArticle: Function,
+}
 
-    const updateActive = (index: number) => {
-        if (index === activeIndex) {
-            setActiveIndex(-1);
-        } else {
-            setActiveIndex(index);
-        }
-    }
+export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
 
-    /** Refactoring notes
-     * Iterate over several components
-     * and dynamically allocate index
-     * 
-     * also maybe divide into 'past' and 'current' projects
-     * 
-     * also look into callbacks for making the accordion items modular
-     * but still changing the state
-     */
+    // const [activeIndex, setActiveIndex] = useState<number>(-1);
+
+    // const updateActive = (index: number) => {
+    //     if (index === activeIndex) {
+    //         setActiveIndex(-1);
+    //     } else {
+    //         setActiveIndex(index);
+    //     }
+    // }
+
     return (
         <article
             id="work"
@@ -33,48 +31,23 @@ export const Work = ({ className, close }: ArticleProps) => {
             style={{ display: 'none' }}
         >
             <h2 className="major">Work</h2>
-            <Accordion inverted>
-                <Accordion.Title
-                 active={activeIndex === 0}
-                 index={0}
-                 onClick={() => updateActive(0)}
-                >
-                    Roll for Reaction [2020]
-                </Accordion.Title>
-                <Accordion.Content active={activeIndex === 0}>
-                    Hello world
-                </Accordion.Content>
-                <Accordion.Title
-                 active={activeIndex === 1}
-                 index={1}
-                 onClick={() => updateActive(1)}
-                >
-                    Energize [2019]
-                </Accordion.Title>
-                <Accordion.Content active={activeIndex === 1}>
-                    <i>Outerstellar</i> is a top-down arcade space shooter made in
-                    GameMaker. The story goes that a group of high-schoolers used a
-                    government grant to fund an "Arcade Games Hackathon", my computer
-                    science teacher at the time told our class about it, and then I
-                    signed up. Queue me being paired...
-                </Accordion.Content>
-                <Accordion.Title
-                 active={activeIndex === 2}
-                 index={2}
-                 onClick={() => updateActive(2)}
-                >
-                    Wireless Energy Monitor [2018]
-                </Accordion.Title>
-                <Accordion.Content active={activeIndex === 2}>
-                    <i>Outerstellar</i> is a top-down arcade space shooter made in
-                    GameMaker. The story goes that a group of high-schoolers used a
-                    government grant to fund an "Arcade Games Hackathon", my computer
-                    science teacher at the time told our class about it, and then I
-                    signed up. Queue me being paired...
-                </Accordion.Content>
-                {/* <Outerstellar /> */}
-            </Accordion>
-
+            <h3>Current Projects</h3>
+            <button
+                onClick={() => {
+                    onSwitchArticle('outerstellar')
+                }}
+            >
+                Outerstellar [2016]
+            </button>
+            <br />
+            <h3>Past Projects</h3>
+            <button
+                onClick={() => {
+                    onSwitchArticle('outerstellar')
+                }}
+            >
+                Outerstellar [2016]
+            </button>
 
             {close}
         </article >)

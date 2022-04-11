@@ -3,11 +3,13 @@ import { ContactForm } from './ContactForm'
 import { LegacyRef } from '@reach/router/node_modules/@types/react'
 import { About } from '../articles/About'
 import { Work } from '../articles/Work'
+import { Outerstellar } from '../articles/work/Outerstellar'
 
 interface MainProps {
   route: object,
   article: string,
   articleTimeout: boolean,
+  onSwitchArticle: Function,
   onCloseArticle: Function,
   timeout: boolean,
   setWrapperRef: LegacyRef<HTMLDivElement>,
@@ -24,6 +26,15 @@ export class Main extends React.Component<MainProps> {
       ></div>
     )
 
+    let closeWorkItem = (
+      <div
+        className="close"
+        onClick={() => {
+          this.props.onSwitchArticle('work')
+        }}
+      ></div>
+    )
+
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -34,7 +45,7 @@ export class Main extends React.Component<MainProps> {
           }`} close={close} />
 
         <Work className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
-          }`} close={close} />
+          }`} onSwitchArticle={this.props.onSwitchArticle} close={close} />
 
         <article
           id="contact"
@@ -46,6 +57,9 @@ export class Main extends React.Component<MainProps> {
           <ContactForm />
           {close}
         </article>
+
+        {/* WORK ITEMS */}
+        <Outerstellar className={`${this.props.article === 'outerstellar' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} close={closeWorkItem} />
       </div>
     )
   }

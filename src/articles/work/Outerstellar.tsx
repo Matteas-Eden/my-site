@@ -1,18 +1,15 @@
 import React from 'react';
 import outerstellarCover from '../../images/outerstellar.png';
+import { ArticleProps } from '../ArticleProps';
 
-export const Outerstellar = () => (
-    <details>
-        <summary>Outerstellar [2016]</summary>
+export const Outerstellar = ({className, close} : ArticleProps) => (
+    <article id="outerstellar" className={className} style={{ display: 'none' }}>
         <div style={{
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            width: '50%'
+            textAlign: 'center'
         }}>
-            <img src={outerstellarCover} />
+            <img style={{ width: '20rem' }}src={outerstellarCover} />
         </div>
-        
+
         <p>
             <i>Outerstellar</i> is a top-down arcade space shooter made in
             GameMaker. The story goes that a group of high-schoolers used a
@@ -52,5 +49,6 @@ export const Outerstellar = () => (
                 </a>
             </li>
         </ul>
-    </details>
+        {close}
+    </article>
 )
