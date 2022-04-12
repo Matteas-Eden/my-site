@@ -27,7 +27,7 @@ export class Main extends React.Component<MainProps> {
 
     let closeWorkItem = (
       <div
-        className="back"
+        className="close back"
         onClick={() => {
           this.props.onSwitchArticle('work')
         }}

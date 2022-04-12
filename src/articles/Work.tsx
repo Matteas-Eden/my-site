@@ -1,11 +1,4 @@
-// import React, { useState } from 'react';
 import React from 'react';
-
-// import { Outerstellar } from './work/Outerstellar';
-// import { Accordion, Icon } from 'semantic-ui-react';
-// import { TestArticle } from './work/TestArticle';
-
-// import '../assets/css/semantic-accordion.css';
 
 import { ArticleProps } from "./ArticleProps"
 interface WorkProps extends ArticleProps {
@@ -14,16 +7,6 @@ interface WorkProps extends ArticleProps {
 
 export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
 
-    // const [activeIndex, setActiveIndex] = useState<number>(-1);
-
-    // const updateActive = (index: number) => {
-    //     if (index === activeIndex) {
-    //         setActiveIndex(-1);
-    //     } else {
-    //         setActiveIndex(index);
-    //     }
-    // }
-
     return (
         <article
             id="work"
@@ -31,21 +14,21 @@ export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
             style={{ display: 'none' }}
         >
             <h2 className="major">Work</h2>
-            <h3 style={{ marginBottom: 0 }}>Current Projects</h3>
+            {/* <h3 style={{ marginBottom: 0 }}>Current Projects</h3>
             <button
                 onClick={() => {
-                    onSwitchArticle('outerstellar')
+                    onSwitchArticle('BakuganRerolled')
                 }}
             >
-                bakugan rerolled
+                Bakugan Rerolled
             </button>
             <button
                 onClick={() => {
-                    onSwitchArticle('outerstellar')
+                    onSwitchArticle('SelfHostedKubernetes')
                 }}
             >
-                self-hosted kubernetes
-            </button>
+                Self-Hosted Kubernetes
+            </button> */}
             <h3 style={{ marginBottom: 0 }}>Past Projects</h3>
             <button
                 onClick={() => {
