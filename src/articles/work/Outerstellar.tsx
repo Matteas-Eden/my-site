@@ -4,12 +4,10 @@ import { ArticleProps } from '../ArticleProps';
 
 export const Outerstellar = ({className, close} : ArticleProps) => (
     <article id="outerstellar" className={className} style={{ display: 'none' }}>
-        <div style={{
-            textAlign: 'center'
-        }}>
-            <img style={{ width: '20rem' }}src={outerstellarCover} />
-        </div>
-
+        <span className="image main" style={{margin: '0 0 1.5rem 0'}}>
+            <img src={outerstellarCover} alt="" />
+        </span>
+        <h2 className='major'>Outerstellar</h2>
         <p>
             <i>Outerstellar</i> is a top-down arcade space shooter made in
             GameMaker. The story goes that a group of high-schoolers used a

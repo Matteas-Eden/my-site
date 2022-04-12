@@ -95,6 +95,47 @@
 				}
 			}
 
+			.back {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 4rem;
+				height: 4rem;
+				cursor: pointer;
+				text-indent: 4rem;
+				overflow: hidden;
+				white-space: nowrap;
+
+				&:before {
+					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0.75rem;
+					left: 0.75rem;
+					width: 2.5rem;
+					height: 2.5rem;
+					border-radius: 100%;
+					background-position: center;
+					background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 60 80" zoomAndPan="disable"><style>polyline { stroke: #{_palette(border)}; stroke-width: 2.5; }</style><polyline fill="none" stroke="#FFFFFF" points="45.63,75.8 0.375,38.087 45.63,0.375 "/></svg>');
+					background-size: 30px 30px;
+					background-repeat: no-repeat;
+				}
+
+				&:hover {
+					&:before {
+						background-color: _palette(border-bg);
+					}
+				}
+
+				&:active {
+					&:before {
+						background-color: _palette(border-bg-alt);
+					}
+				}
+			}
+
 		}
 
 		@include breakpoint(small) {
