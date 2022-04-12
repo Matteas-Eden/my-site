@@ -1,6 +1,5 @@
 import React from 'react'
 import { ContactForm } from './ContactForm'
-import { LegacyRef } from '@reach/router/node_modules/@types/react'
 import { About } from '../articles/About'
 import { Work } from '../articles/Work'
 import { Outerstellar } from '../articles/work/Outerstellar'
@@ -12,7 +11,7 @@ interface MainProps {
   onSwitchArticle: Function,
   onCloseArticle: Function,
   timeout: boolean,
-  setWrapperRef: LegacyRef<HTMLDivElement>,
+  setWrapperRef: any,
 }
 
 export class Main extends React.Component<MainProps> {
