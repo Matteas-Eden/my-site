@@ -31,7 +31,22 @@ export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
             style={{ display: 'none' }}
         >
             <h2 className="major">Work</h2>
-            <h3>Current Projects</h3>
+            <h3 style={{ marginBottom: 0 }}>Current Projects</h3>
+            <button
+                onClick={() => {
+                    onSwitchArticle('outerstellar')
+                }}
+            >
+                bakugan rerolled
+            </button>
+            <button
+                onClick={() => {
+                    onSwitchArticle('outerstellar')
+                }}
+            >
+                self-hosted kubernetes
+            </button>
+            <h3 style={{ marginBottom: 0 }}>Past Projects</h3>
             <button
                 onClick={() => {
                     onSwitchArticle('outerstellar')
@@ -39,16 +54,6 @@ export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
             >
                 Outerstellar [2016]
             </button>
-            <br />
-            <h3>Past Projects</h3>
-            <button
-                onClick={() => {
-                    onSwitchArticle('outerstellar')
-                }}
-            >
-                Outerstellar [2016]
-            </button>
-
             {close}
         </article >)
 }
