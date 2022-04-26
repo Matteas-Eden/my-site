@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactForm } from './ContactForm'
+import { Contact } from '../articles/Contact'
 import { About } from '../articles/About'
 import { Work } from '../articles/Work'
 import { Outerstellar } from '../articles/work/Outerstellar'
@@ -46,16 +46,8 @@ export class Main extends React.Component<MainProps> {
         <Work className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
           }`} onSwitchArticle={this.props.onSwitchArticle} close={close} />
 
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
-            }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Contact</h2>
-          <ContactForm />
-          {close}
-        </article>
+        <Contact className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+          }`} close={close} />
 
         {/* WORK ITEMS */}
         <Outerstellar className={`${this.props.article === 'outerstellar' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} close={closeWorkItem} />
