@@ -78,20 +78,20 @@ class IndexPage extends React.Component {
     }, 350)
   }
 
-  handleSwitchArticle(article) {   
+  handleSwitchArticle(article) {
     this.setState({
-      articleTimeout: false
+      articleTimeout: false,
     })
 
     setTimeout(() => {
       this.setState({
-        article: article
+        article: article,
       })
     }, 325)
 
     setTimeout(() => {
       this.setState({
-        articleTimeout: true
+        articleTimeout: true,
       })
     }, 350)
   }

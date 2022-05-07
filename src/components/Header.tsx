@@ -2,8 +2,8 @@ import React from 'react'
 import { Logo } from './Logo'
 
 interface HeaderProps {
-  onOpenArticle: Function;
-  timeout: boolean;
+  onOpenArticle: Function
+  timeout: boolean
 }
 
 export const Header = (props: HeaderProps) => (

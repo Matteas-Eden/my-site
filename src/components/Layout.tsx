@@ -5,8 +5,11 @@ import { RouteComponentProps } from 'react-router'
 
 import '../assets/scss/main.scss'
 
-export const Layout: React.FC<RouteComponentProps> = ({ children, location }) => {
-  let content: JSX.Element;
+export const Layout: React.FC<RouteComponentProps> = ({
+  children,
+  location,
+}) => {
+  let content: JSX.Element
 
   if (location && location.pathname === '/') {
     content = <div>{children}</div>
