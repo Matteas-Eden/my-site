@@ -62,19 +62,13 @@
     z-index: 1;
   }
 
-  @media screen and (min-width: 0px) and (max-width: 400px) {
+  @media screen and (min-width: 0px) and (max-width: 750px) {
     &:after {
-      background-image: url('../../images/bg-480w.jpg');
-    }  
-  }
-  
-  @media screen and (min-width: 401px) and (max-width: 900px) {
-    &:after {
-      background-image: url('../../images/bg-960w.jpg');
+      background-image: url('../../images/bg-1280w.jpg');
     }  
   }
 
-  @media screen and (min-width: 901px) and (max-width: 1800px) {
+  @media screen and (min-width: 751px) and (max-width: 1800px) {
     &:after {
       background-image: url('../../images/bg-1920w.jpg');
     }  
