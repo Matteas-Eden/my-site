@@ -1,6 +1,8 @@
 import React from 'react'
 import { Logo } from './Logo'
 
+import resumePDF from '../assets/MattEdenResume.pdf';
+
 interface HeaderProps {
   onOpenArticle: Function
   timeout: boolean
@@ -58,6 +60,16 @@ export const Header = (props: HeaderProps) => (
             }}
           >
             Work
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              // props.onOpenArticle('resume')
+              window.open(resumePDF, '_blank')
+            }}
+          >
+            Resumé
           </button>
         </li>
         <li>
