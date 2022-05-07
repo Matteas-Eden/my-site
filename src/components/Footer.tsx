@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface FooterProps {
-  timeout: boolean;
+  timeout: boolean
 }
 
 export const Footer = (props: FooterProps) => (

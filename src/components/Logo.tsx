@@ -1,13 +1,13 @@
 import React from 'react'
 
 interface LogoProps {
-  className: string,
-  size: string,
-  thickness: number,
+  className: string
+  size: string
+  thickness: number
   colour: string
 }
 
-export const Logo = (props : LogoProps) => {
+export const Logo = (props: LogoProps) => {
   return (
     <svg
       className={props.className || 'icon'}
