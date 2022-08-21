@@ -62,7 +62,7 @@ export const Header = (props: HeaderProps) => (
             Work
           </button>
         </li>
-        <li>
+        {/* <li>
           <button
             onClick={() => {
               // props.onOpenArticle('resume')
@@ -71,7 +71,7 @@ export const Header = (props: HeaderProps) => (
           >
             Resumé
           </button>
-        </li>
+        </li> */}
         <li>
           <button
             onClick={() => {
