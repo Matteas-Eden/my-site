@@ -1,7 +1,7 @@
 import React from 'react'
 import { Logo } from './Logo'
 
-import resumePDF from '../assets/MattEdenResume.pdf';
+import resumePDF from '../assets/MattEdenResume.pdf'
 
 interface HeaderProps {
   onOpenArticle: Function
