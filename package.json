@@ -27,6 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0",
     "serve": "gatsby serve",
@@ -34,6 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "sass": "^1.54.5"
   },
