@@ -49,6 +49,7 @@ export const Layout: React.FC<RouteComponentProps> = ({
             ]}
           >
             <html lang="en" />
+            <script async defer data-website-id="d7fa3c92-093e-431d-b7b3-1ada0da53156" src="https://umami.matteas.nz/umami.js"></script>
           </Helmet>
           {content}
         </>
