@@ -57,6 +57,10 @@
 			color: _palette(bg) !important;
 			font-weight: _font(weight-bold);
 
+			&.disabled {
+				background-color: darkgray;
+			}
+
 			&:hover {
 			}
 
