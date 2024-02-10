@@ -36,7 +36,16 @@ export const Header = (props: HeaderProps) => (
               className="icon fa-github"
               target="_blank"
             >
-              <span className="label">GitHub</span>
+              <span className="label">Github</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:43237"
+              className="icon fa-newspaper-o"
+              target="_blank"
+            >
+              <span className="label">Blog</span>
             </a>
           </li>
         </ul>
