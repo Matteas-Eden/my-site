@@ -44,7 +44,7 @@ export const Layout: React.FC<RouteComponentProps> = ({
               },
               {
                 name: 'keywords',
-                content: 'matteas, eden, developer, engineer, gatsby, react',
+                content: 'matt, eden, developer, engineer, gatsby, react',
               },
             ]}
           >

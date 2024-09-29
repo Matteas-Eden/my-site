@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Matteas Eden',
-    author: 'Matteas Eden',
+    title: 'Matt Eden',
+    author: 'Matt Eden',
     description: 'Software Developer, Computer Engineer and Linux Enthusiast',
   },
   plugins: [
@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'matteas-eden',
-        short_name: 'matteas',
+        name: 'matt-eden',
+        short_name: 'matt',
         start_url: '/',
         background_color: '#004a7f',
         theme_color: '#004a7f',

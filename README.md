@@ -1,12 +1,15 @@
 <p align='center'>
-    <img src='https://user-images.githubusercontent.com/45587386/77818965-02f7eb80-713c-11ea-994a-7600c1a31a32.png'>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="src/images/site-logo-white.png">
+        <img alt="Matt Eden Website Logo" src="src/images/site-logo.png">
+    </picture>
 </p>
 
 ## Intro
 
 Hi, I'm Matt. I like computers a lot, and on occasion I use them for something mildly productive. This is a simple portfolio site which has some rudimentary info around me, a mini-showcase of some projects I don't hide out of embarrassment and a straightforward contact form if you want to get in touch.
 
-**Take a look:** [matteas.nz](https://matteas.nz)
+**Take a look:** [matteden.nz](https://matteden.nz)
 ## Development
 
 This site was built using the [Gatsby Dimension Starter](https://github.com/codebushi/gatsby-starter-dimension), and therefore inherits all of its dependencies.

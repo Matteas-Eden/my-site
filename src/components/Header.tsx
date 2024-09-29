@@ -15,7 +15,7 @@ export const Header = (props: HeaderProps) => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Matteas Eden</h1>
+        <h1>Matt Eden</h1>
         <p>
           Software Developer, Computer Engineer and Linux Enthusiast. <br />
           Creating the future - one line of code at a time.

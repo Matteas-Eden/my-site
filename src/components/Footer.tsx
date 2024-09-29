@@ -13,7 +13,7 @@ export const Footer = (props: FooterProps) => (
         Codebushi
       </a>
       . Customised by:{' '}
-      <a href="https://github.com/Matteas-Eden/my-site">Matteas Eden</a>.
+      <a href="https://github.com/Matteas-Eden/my-site">Matt Eden</a>.
     </p>
   </footer>
 )

@@ -1,8 +1,8 @@
 {
   "name": "my-site",
-  "description": "Portfolio site for Matteas Eden",
+  "description": "Portfolio site for Matt Eden",
   "version": "1.0.0",
-  "author": "Matteas Eden",
+  "author": "Matt Eden",
   "dependencies": {
     "@formspree/core": "^2.7.1",
     "@formspree/react": "^2.3.1",
