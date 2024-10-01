@@ -16,7 +16,7 @@ jobs:
     
     steps:
       - name: Dispatch CI event
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
           repository: ${{ secrets.TARGET_REPO }}
