@@ -17,8 +17,20 @@ export const RollforReaction = ({ className, close }: ArticleProps) => (
       the player, to explore a set of dungeons, collecting the items and
       abilities required to defeat the enemies you encounter along the way.
       Loosely based on the real-world tabletop RPG Dungeons and Dragons and
-      forked from a pre-existing open-source project, the game includes the
-      following features:
+      forked from a pre-existing open-source project, the game is lots of fun
+      and endlessly replayable.
+      <br />
+      Created with{' '}
+      <a href="https://reactjs.org/" target="_blank">
+        React
+      </a>{' '}
+      and{' '}
+      <a href="https://reduxjs.org/" target="_blank">
+        Redux
+      </a>
+      .
+      <br />
+      <b>Features:</b>
       <ul style={{ margin: '0' }}>
         <li>Point-based ability scores that determine player stats</li>
         <li>
@@ -29,15 +41,6 @@ export const RollforReaction = ({ className, close }: ArticleProps) => (
         <li>Supported on both desktop and mobile</li>
         <li>A variety of enemies across many, many levels</li>
       </ul>
-      Created with{' '}
-      <a href="https://reactjs.org/" target="_blank">
-        React
-      </a>{' '}
-      and{' '}
-      <a href="https://reduxjs.org/" target="_blank">
-        Redux
-      </a>
-      .
     </p>
     <ul
       className="icons"

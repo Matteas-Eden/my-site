@@ -13,8 +13,19 @@ export const Energize = ({ className, close }: ArticleProps) => (
       you, the hero, as you traverse a randomly-generated dungeon in your quest
       to defeat the "big bad evil guy" waiting for you at the end. Find items
       along the way to help you in your quest, or bring along a friend to watch
-      your back and help you cut down the enemies that stand in your way. An
-      original game, it includes the following features:
+      your back and help you cut down the enemies that stand in your way.
+      <br />
+      Created in{' '}
+      <a href="https://openjdk.java.net/" target="_blank">
+        Java 11
+      </a>{' '}
+      using the{' '}
+      <a href="https://openjfx.io/" target="_blank">
+        JavaFX
+      </a>{' '}
+      library.
+      <br />
+      <b>Features:</b>
       <ul style={{ margin: '0' }}>
         <li>Save/Load</li>
         <li>LAN Multiplayer (up to 4 players)</li>
@@ -26,15 +37,6 @@ export const Energize = ({ className, close }: ArticleProps) => (
         <li>Randomised Levels</li>
         <li>Sound Effects & Background Music</li>
       </ul>
-      Created in{' '}
-      <a href="https://openjdk.java.net/" target="_blank">
-        Java 11
-      </a>{' '}
-      using the{' '}
-      <a href="https://openjfx.io/" target="_blank">
-        JavaFX
-      </a>{' '}
-      library.
     </p>
     <ul
       className="icons"
