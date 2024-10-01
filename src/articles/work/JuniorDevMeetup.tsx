@@ -1,4 +1,5 @@
 import React from 'react'
+import rficCover from '../../images/rfic-talk.png'
 import { ArticleProps } from '../ArticleProps'
 
 export const JuniorDevMeetup = ({ className, close }: ArticleProps) => (
@@ -7,9 +8,9 @@ export const JuniorDevMeetup = ({ className, close }: ArticleProps) => (
     className={className}
     style={{ display: 'none' }}
   >
-    {/* <span className="image main" style={{ margin: '0 0 1.5rem 0' }}>
-      <img src={energizeCover} alt="" />
-    </span> */}
+    <span className="image main" style={{ margin: '0 0 0 0' }}>
+      <img src={rficCover} alt="" />
+    </span>
     <h2 className="major">JuniorDev Meetup Talk</h2>
     <p>
       In October of 2024, I was graciously invited to give a talk at the{' '}
