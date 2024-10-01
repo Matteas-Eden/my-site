@@ -10,13 +10,6 @@ export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
     <article id="work" className={className} style={{ display: 'none' }}>
       <h2 className="major">Work</h2>
       <h3 style={{ marginBottom: 0 }}>Current Projects</h3>
-      {/* <button
-                onClick={() => {
-                    onSwitchArticle('BakuganRerolled')
-                }}
-            >
-                Bakugan Rerolled
-            </button> */}
       <button
         onClick={() => {
           onSwitchArticle('self-hosted-kubernetes')
@@ -25,6 +18,13 @@ export const Work = ({ className, onSwitchArticle, close }: WorkProps) => {
         Self-Hosted Kubernetes
       </button>
       <h3 style={{ marginBottom: 0 }}>Past Projects</h3>
+      <button
+        onClick={() => {
+          onSwitchArticle('juniordev-meetup')
+        }}
+      >
+        JuniorDev Meetup Talk [2024]
+      </button>
       <button
         onClick={() => {
           onSwitchArticle('roll-for-reaction')

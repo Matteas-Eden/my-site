@@ -6,6 +6,7 @@ import { Outerstellar } from '../articles/work/Outerstellar'
 import { Energize } from '../articles/work/Energize'
 import { RollforReaction } from '../articles/work/RollforReaction'
 import { SelfHostedKubernetes } from '../articles/work/SelfHostedKubernetes'
+import { JuniorDevMeetup } from '../articles/work/JuniorDevMeetup'
 
 interface MainProps {
   route: object
@@ -87,6 +88,12 @@ export class Main extends React.Component<MainProps> {
         <SelfHostedKubernetes
           className={`${
             this.props.article === 'self-hosted-kubernetes' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
+          close={closeWorkItem}
+        />
+        <JuniorDevMeetup
+          className={`${
+            this.props.article === 'juniordev-meetup' ? 'active' : ''
           } ${this.props.articleTimeout ? 'timeout' : ''}`}
           close={closeWorkItem}
         />
