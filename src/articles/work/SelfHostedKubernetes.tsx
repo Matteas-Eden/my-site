@@ -7,14 +7,10 @@ export const SelfHostedKubernetes = ({ className, close }: ArticleProps) => (
     className={className}
     style={{ display: 'none' }}
   >
-    {/* <span className="image main" style={{margin: '0 0 1.5rem 0'}}>
-            <img src={outerstellarCover} alt="" />
-        </span> */}
     <h2 className="major">Self-Hosted Kubernetes</h2>
-    <h3>Current State</h3>
     <p>
-      This website, and all of the websites using the matteas.nz domain, are
-      hosted out of my personal{' '}
+      This website, and all of the websites using the matteden.nz or matteas.nz
+      domains, are hosted out of my personal{' '}
       <a href="https://kubernetes.io/" target="_blank">
         Kubernetes
       </a>{' '}
@@ -39,14 +35,14 @@ export const SelfHostedKubernetes = ({ className, close }: ArticleProps) => (
       is used for syncing application manifests between Kubernetes and a private
       repository on Github, which means that it's easy to spin up new
       applications and rollback manifests when needed.
-    </p>
-    <h3>Future Goals</h3>
-    <p>
-      Moving forward, it would be great to introduce a proper CI/CD pipeline for
-      the source code itself so that the deployment process could be improved.
-      At the moment, it's a manual process to restart the containers so that
-      they pull down the latest changes from the Github repos where the website
-      code is published.
+      <br />
+      <br />
+      Application repositories, such as the individual websites, make use of a
+      CI pipeline that is triggered on a push to the master branch. From this,
+      an event is sent to the manifest repository, which triggers ArgoCD to
+      deploy the restart the deployment containers and pull down the latest
+      version of the source. All of this is managed via Github Actions and
+      Workflows.
     </p>
     {close}
   </article>
